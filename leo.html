@@ -1,0 +1,558 @@
+<!doctype HTML>
+<html>
+<head>
+  
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Tilt+Neon&display=swap" rel="stylesheet">
+    
+    
+    
+    
+<style>
+.ag-format-container {
+  width: 1142px;
+  margin: 0 auto;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+html{
+  scroll-behavior: smooth ;
+  webkit-tap-highlight-color: transparent;
+}
+body {
+  background-color: #e3e3e3;
+  background: url(Win1.jpg) ,linear-gradient(45deg, rgba(255,255,255,.4),rgba(255,255,255,0.7));
+  background-blend-mode: overlay;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+.ag-courses_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  padding: 15px 0;
+  border-radius:30px;
+}
+.ag-courses_item {
+  -ms-flex-preferred-size: calc(33.33333% - 30px);
+  flex-basis: calc(33.33333% - 30px);
+
+  margin: 0 15px 30px;
+
+  overflow: hidden;
+
+  border-radius: 15px;
+  
+  
+}
+.ag-courses-item_link {
+  display: block;
+  padding: 30px 20px;
+  background-color: #ffffff;
+
+  overflow: hidden;
+box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+
+border-radius: 15px;
+  position: relative;
+}
+.ag-courses-item_link:hover,
+.ag-courses-item_link:hover .ag-courses-item_date {
+  text-decoration: none;
+  color: #fff;
+}
+.ag-courses-item_link:hover .ag-courses-item_bg {
+  -webkit-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+  
+}
+.ag-courses-item_link:hover .ag-courses-item_title{
+  color: white;
+}
+.ag-courses-item_title {
+  min-height: 87px;
+  margin: 0 0 25px;
+
+  overflow: hidden;
+
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #000;
+  z-index: 2;
+  position: relative;
+}
+.ag-courses-item_title:hover{
+  color:#fff;
+}
+.ag-courses-item_date-box {
+  font-size: 18px;
+  color: #000;
+
+  z-index: 2;
+  position: relative;
+  
+}
+.ag-courses-item_date {
+  font-weight: bold;
+  color: #f9b234;
+
+  -webkit-transition: color .5s ease;
+  -o-transition: color .5s ease;
+  transition: color .5s ease
+}
+.ag-courses-item_bg {
+  height: 128px;
+  width: 128px;
+  background-color: #f9b234;
+
+  z-index: 1;
+  position: absolute;
+  top: -75px;
+  right: -75px;
+
+  border-radius: 50%;
+  -webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease;
+}
+.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
+  background: #3ecd5e;
+}
+.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
+  background-color: #e44002;
+}
+.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
+  background-color: #952aff;
+}
+.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
+  background-color: #cd3e94;
+}
+.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
+  background-color: #4c49ea;
+}
+
+
+
+@media only screen and (max-width: 979px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: calc(50% - 30px);
+    flex-basis: calc(50% - 30px);
+  }
+  .ag-courses-item_title {
+    font-size: 24px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .ag-format-container {
+    width: 96%;
+  }
+
+}
+@media only screen and (max-width: 639px) {
+  .ag-courses_item {
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%;
+  }
+  .ag-courses-item_title {
+    min-height: 72px;
+    line-height: 1;
+
+    font-size: 24px;
+  }
+  .ag-courses-item_link {
+    padding: 22px 40px;
+  }
+  .ag-courses-item_date-box {
+    font-size: 16px;
+  }
+}
+h1{
+  background: url(Gif.gif);
+  background-clip: text;
+ background-size: contain;
+ color: transparent;
+ 
+  
+  
+  backdrop-filter: blur(2.7rem);
+  letter-spacing: 2px;
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bolder;
+  font-style: normal;
+}
+a:hover{
+  color: #fff;
+}
+.ag-courses_item:hover{
+  color: #fff;
+}
+
+         /* transition effects */
+
+  
+ .hidden{
+            opacity: 0;
+        scale:0.5;
+        
+            transform: translateY(100px);
+
+            transition: all 500ms; 
+      }
+      @media(prefers-reduced-motion){
+        .hidden{
+            transition: none;
+        }
+      }
+        
+        .show{
+            opacity: 1;
+         scale:1;
+        
+            transform: translateY(0);
+
+        }
+        .go-arrow{
+          position: relative;
+          transition: 300ms;
+          animation: loop infinite 1s;
+          
+        }
+        @keyframes loop{
+          0%{
+            
+            left: 0px;
+            
+          }
+          
+          50%{
+            left: 10px;
+          }
+          100%{
+            left: 0;
+          }
+        }
+        #loadimg{
+          position: absolute;
+          left: 0;
+          top:0;
+          height:100dvh;
+          width: 100vw;
+          z-index: 100;
+          background: url(Gif.gif);
+          filter: brightness(80%);
+          background-size:100% 100%;
+          opacity: 1;
+          
+          transition: 1s;
+        }
+        #loadimg::after{
+          content:"LOADING.....";
+          position: absolute;
+          top: 80%;
+          left:50%;
+          transform:translate(-50%, -50%);
+          color: white;
+          background: #000000b4;
+          border-radius:10px;
+          padding: 5px 20px;
+          font-weight: bolder;
+          font-size: 2.5rem;
+          
+          z-index: 300;
+        }
+       #srgec{
+         letter-spacing: .7rem;
+         
+         transition: 1s;
+         transition-delay: 1s;
+       }
+</style>
+
+
+<script type="text/javascript" charset="utf-8">
+  $(document).ready(function (){
+    setTimeout(()=>{
+      
+      $("#loadimg").fadeOut(1000)
+    },2000)
+    
+    setTimeout(()=>{
+    //  $("#loadimg").css("height","0")
+      
+      
+     
+        $("#srgec").css({
+        "letterSpacing":"2px"
+      })
+
+    
+    },2500)
+    
+  })
+</script>
+</head>
+<body>
+  <h1 class="mt-0 text-center display-1 fw-bolder fixed-top shadow-sm" id="srgec">SRGEC ECE</h1>
+  
+  
+    <div id="loadimg">
+<!--     <img src="man-wearing-vr-glasses-gaming.jpg" class="img-fluid " style="height:100dvh" id="loadimg" alt="" /> -->
+  </div>
+  
+
+
+  
+  
+  
+  
+<div class="ag-format-container mt-5">
+  <div class="mt-5 text-center d-flex justify-content-center align-items-end">
+     <h2 class="display-2 text-center text-decoration-underline mt-4 fw-bold text-light-emphasis">Forms</h2>
+     </div>
+     
+  <div class="ag-courses_box mb-5" style="background: rgba(255,255,255,.2)">
+
+    <div class="ag-courses_item hidden">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title hidden">
+          🗞️ Research Papers Published since January 2024
+        </div>
+
+        <div class="ag-courses-item_date-box hidden">
+          
+<button class="btn bg-warning-subtle float-end go-arrow shadow-s"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="m25.05 30.25 5.2-5.2q.45-.45.45-1.05 0-.6-.45-1.05L25 17.7q-.4-.4-1.025-.375-.625.025-1.025.425-.45.45-.45 1.05 0 .6.45 1.05l2.65 2.65h-7.65q-.6 0-1.025.45-.425.45-.425 1.05 0 .65.425 1.075.425.425 1.075.425h7.6l-2.7 2.7q-.4.4-.375 1.025.025.625.425 1.025.45.45 1.05.45.6 0 1.05-.45ZM24 44q-4.25 0-7.9-1.525-3.65-1.525-6.35-4.225-2.7-2.7-4.225-6.35Q4 28.25 4 24q0-4.2 1.525-7.85Q7.05 12.5 9.75 9.8q2.7-2.7 6.35-4.25Q19.75 4 24 4q4.2 0 7.85 1.55Q35.5 7.1 38.2 9.8q2.7 2.7 4.25 6.35Q44 19.8 44 24q0 4.25-1.55 7.9-1.55 3.65-4.25 6.35-2.7 2.7-6.35 4.225Q28.2 44 24 44Z"/></svg></button>
+        </div>
+      </a>
+    </div>
+
+        <div class="ag-courses_item hidden" style="transition-delay:200ms">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title hidden">
+         📃 Conference Papers  presented since January 2024
+        </div>
+
+        <div class="ag-courses-item_date-box hidden">
+          
+<button class="btn bg-success-subtle float-end go-arrow shadow-s"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="m25.05 30.25 5.2-5.2q.45-.45.45-1.05 0-.6-.45-1.05L25 17.7q-.4-.4-1.025-.375-.625.025-1.025.425-.45.45-.45 1.05 0 .6.45 1.05l2.65 2.65h-7.65q-.6 0-1.025.45-.425.45-.425 1.05 0 .65.425 1.075.425.425 1.075.425h7.6l-2.7 2.7q-.4.4-.375 1.025.025.625.425 1.025.45.45 1.05.45.6 0 1.05-.45ZM24 44q-4.25 0-7.9-1.525-3.65-1.525-6.35-4.225-2.7-2.7-4.225-6.35Q4 28.25 4 24q0-4.2 1.525-7.85Q7.05 12.5 9.75 9.8q2.7-2.7 6.35-4.25Q19.75 4 24 4q4.2 0 7.85 1.55Q35.5 7.1 38.2 9.8q2.7 2.7 4.25 6.35Q44 19.8 44 24q0 4.25-1.55 7.9-1.55 3.65-4.25 6.35-2.7 2.7-6.35 4.225Q28.2 44 24 44Z"/></svg></button>
+        </div>
+      </a>
+    </div>
+    
+        <div class="ag-courses_item hidden" style="transition-delay:300ms">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title hidden">
+          
+        📚 Book/Book Chapters Published since January 2024
+        </div>
+
+        <div class="ag-courses-item_date-box hidden">
+          
+<button class="btn bg-danger-subtle float-end go-arrow shadow-s"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="m25.05 30.25 5.2-5.2q.45-.45.45-1.05 0-.6-.45-1.05L25 17.7q-.4-.4-1.025-.375-.625.025-1.025.425-.45.45-.45 1.05 0 .6.45 1.05l2.65 2.65h-7.65q-.6 0-1.025.45-.425.45-.425 1.05 0 .65.425 1.075.425.425 1.075.425h7.6l-2.7 2.7q-.4.4-.375 1.025.025.625.425 1.025.45.45 1.05.45.6 0 1.05-.45ZM24 44q-4.25 0-7.9-1.525-3.65-1.525-6.35-4.225-2.7-2.7-4.225-6.35Q4 28.25 4 24q0-4.2 1.525-7.85Q7.05 12.5 9.75 9.8q2.7-2.7 6.35-4.25Q19.75 4 24 4q4.2 0 7.85 1.55Q35.5 7.1 38.2 9.8q2.7 2.7 4.25 6.35Q44 19.8 44 24q0 4.25-1.55 7.9-1.55 3.65-4.25 6.35-2.7 2.7-6.35 4.225Q28.2 44 24 44Z"/></svg></button>
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item hidden">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title hidden">
+       <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.2em"><path fill="#d8b1fe" d="M7 42q-1.25 0-2.125-.875T4 39V7.7q0-.7.35-.85.35-.15.85.35l2.15 2.15L9.6 7.1q.25-.25.5-.35.25-.1.55-.1.3 0 .55.075.25.075.5.325l2.3 2.3 2.3-2.3q.25-.25.5-.325.25-.075.55-.075.3 0 .55.1.25.1.5.35l2.25 2.25 2.3-2.3q.25-.25.5-.35.25-.1.55-.1.3 0 .55.1.25.1.5.35l2.3 2.3L29.6 7.1q.25-.25.5-.35.25-.1.55-.1.3 0 .55.075.25.075.5.325l2.3 2.3 2.3-2.3q.25-.25.5-.325.25-.075.55-.075.3 0 .55.1.25.1.5.35l2.25 2.25L42.8 7.2q.5-.5.85-.35.35.15.35.85V39q0 1.25-.875 2.125T41 42Zm0-3h15.5V25H7v14Zm18.5 0H41v-5.5H25.5Zm0-8.5H41V25H25.5ZM7 22h34v-6H7Z"/></svg>   Patents published/ Granted since January 2024 
+        </div>
+
+        <div class="ag-courses-item_date-box hidden">
+          
+<button class="btn bg-primary-subtle float-end go-arrow shadow-s"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="m25.05 30.25 5.2-5.2q.45-.45.45-1.05 0-.6-.45-1.05L25 17.7q-.4-.4-1.025-.375-.625.025-1.025.425-.45.45-.45 1.05 0 .6.45 1.05l2.65 2.65h-7.65q-.6 0-1.025.45-.425.45-.425 1.05 0 .65.425 1.075.425.425 1.075.425h7.6l-2.7 2.7q-.4.4-.375 1.025.025.625.425 1.025.45.45 1.05.45.6 0 1.05-.45ZM24 44q-4.25 0-7.9-1.525-3.65-1.525-6.35-4.225-2.7-2.7-4.225-6.35Q4 28.25 4 24q0-4.2 1.525-7.85Q7.05 12.5 9.75 9.8q2.7-2.7 6.35-4.25Q19.75 4 24 4q4.2 0 7.85 1.55Q35.5 7.1 38.2 9.8q2.7 2.7 4.25 6.35Q44 19.8 44 24q0 4.25-1.55 7.9-1.55 3.65-4.25 6.35-2.7 2.7-6.35 4.225Q28.2 44 24 44Z"/></svg></button>
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item hidden">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title hidden">
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="#f39fd1" d="m21.1 26 2.9-2.15L26.85 26q.45.35.9.05t.3-.85l-1.1-3.55L30 19.3q.4-.35.225-.85-.175-.5-.725-.5h-3.65l-1.15-3.7q-.15-.55-.675-.55t-.725.55l-1.2 3.7h-3.6q-.55 0-.725.5-.175.5.225.85l3.05 2.35-1.1 3.55q-.15.55.3.85.45.3.85-.05Zm-6.9 19.35q-.7.25-1.35-.2-.65-.45-.65-1.25V30.8q-2.25-2.35-3.225-5.15Q8 22.85 8 20q0-6.8 4.6-11.4Q17.2 4 24 4q6.8 0 11.4 4.6Q40 13.2 40 20q0 2.85-.975 5.65-.975 2.8-3.225 5.15v13.1q0 .8-.65 1.25-.65.45-1.35.2l-9.8-3.3ZM24 33q5.45 0 9.225-3.775Q37 25.45 37 20q0-5.45-3.775-9.225Q29.45 7 24 7q-5.45 0-9.225 3.775Q11 14.55 11 20q0 5.45 3.775 9.225Q18.55 33 24 33Zm-8.8 8.8 8.8-2.75 8.8 2.75v-8.55q-2 1.45-4.3 2.1-2.3.65-4.5.65t-4.5-.65q-2.3-.65-4.3-2.1Zm8.8-4.3Z"/></svg>  Research Proposals Submitted / Sanctioned since January 2024
+        </div>
+
+        <div class="ag-courses-item_date-box hidden">
+          
+<button class="btn bg-danger-subtle float-end go-arrow shadow-s"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="m25.05 30.25 5.2-5.2q.45-.45.45-1.05 0-.6-.45-1.05L25 17.7q-.4-.4-1.025-.375-.625.025-1.025.425-.45.45-.45 1.05 0 .6.45 1.05l2.65 2.65h-7.65q-.6 0-1.025.45-.425.45-.425 1.05 0 .65.425 1.075.425.425 1.075.425h7.6l-2.7 2.7q-.4.4-.375 1.025.025.625.425 1.025.45.45 1.05.45.6 0 1.05-.45ZM24 44q-4.25 0-7.9-1.525-3.65-1.525-6.35-4.225-2.7-2.7-4.225-6.35Q4 28.25 4 24q0-4.2 1.525-7.85Q7.05 12.5 9.75 9.8q2.7-2.7 6.35-4.25Q19.75 4 24 4q4.2 0 7.85 1.55Q35.5 7.1 38.2 9.8q2.7 2.7 4.25 6.35Q44 19.8 44 24q0 4.25-1.55 7.9-1.55 3.65-4.25 6.35-2.7 2.7-6.35 4.225Q28.2 44 24 44Z"/></svg></button>
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item hidden">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title hidden">
+     <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.2em" width="1.2em"><path fill="currentColor" d="M3.4 40q-.65 0-1.075-.425Q1.9 39.15 1.9 38.5v-3.2q0-1.75.9-3.175Q3.7 30.7 5.3 30q3.65-1.6 6.575-2.3Q14.8 27 17.9 27q3.1 0 6 .7t6.55 2.3q1.6.7 2.525 2.125.925 1.425.925 3.175v3.2q0 .65-.425 1.075Q33.05 40 32.4 40Zm32.4 0q.5-.1.8-.525.3-.425.3-1.075v-3.1q0-3.15-1.6-5.175t-4.2-3.275q3.45.4 6.5 1.175t4.95 1.775q1.65.95 2.6 2.35.95 1.4.95 3.15v3.2q0 .65-.425 1.075Q45.25 40 44.6 40ZM17.9 23.95q-3.3 0-5.4-2.1-2.1-2.1-2.1-5.4 0-3.3 2.1-5.4 2.1-2.1 5.4-2.1 3.3 0 5.4 2.1 2.1 2.1 2.1 5.4 0 3.3-2.1 5.4-2.1 2.1-5.4 2.1Zm18-7.5q0 3.3-2.1 5.4-2.1 2.1-5.4 2.1-.55 0-1.225-.075T25.95 23.6q1.2-1.25 1.825-3.075.625-1.825.625-4.075t-.625-3.975Q27.15 10.75 25.95 9.3q.55-.15 1.225-.25t1.225-.1q3.3 0 5.4 2.1 2.1 2.1 2.1 5.4ZM4.9 37h26v-1.7q0-.8-.475-1.55T29.25 32.7q-3.6-1.6-6.05-2.15-2.45-.55-5.3-.55-2.85 0-5.325.55T6.5 32.7q-.7.3-1.15 1.05-.45.75-.45 1.55Zm13-16.05q1.95 0 3.225-1.275Q22.4 18.4 22.4 16.45q0-1.95-1.275-3.225Q19.85 11.95 17.9 11.95q-1.95 0-3.225 1.275Q13.4 14.5 13.4 16.45q0 1.95 1.275 3.225Q15.95 20.95 17.9 20.95Zm0-4.5Zm0 13.55Z"/></svg>  &nbsp;  Consultancy Projects since January 2024
+        </div>
+
+        <div class="ag-courses-item_date-box hidden">
+          
+<button class="btn bg-primary-subtle float-end go-arrow shadow-s"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="m25.05 30.25 5.2-5.2q.45-.45.45-1.05 0-.6-.45-1.05L25 17.7q-.4-.4-1.025-.375-.625.025-1.025.425-.45.45-.45 1.05 0 .6.45 1.05l2.65 2.65h-7.65q-.6 0-1.025.45-.425.45-.425 1.05 0 .65.425 1.075.425.425 1.075.425h7.6l-2.7 2.7q-.4.4-.375 1.025.025.625.425 1.025.45.45 1.05.45.6 0 1.05-.45ZM24 44q-4.25 0-7.9-1.525-3.65-1.525-6.35-4.225-2.7-2.7-4.225-6.35Q4 28.25 4 24q0-4.2 1.525-7.85Q7.05 12.5 9.75 9.8q2.7-2.7 6.35-4.25Q19.75 4 24 4q4.2 0 7.85 1.55Q35.5 7.1 38.2 9.8q2.7 2.7 4.25 6.35Q44 19.8 44 24q0 4.25-1.55 7.9-1.55 3.65-4.25 6.35-2.7 2.7-6.35 4.225Q28.2 44 24 44Z"/></svg></button>
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item hidden">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title hidden">
+          Research Papers 🗞️ Published since January 2024
+        </div>
+
+        <div class="ag-courses-item_date-box hidden">
+          
+<button class="btn bg-warning-subtle float-end go-arrow shadow-s"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="m25.05 30.25 5.2-5.2q.45-.45.45-1.05 0-.6-.45-1.05L25 17.7q-.4-.4-1.025-.375-.625.025-1.025.425-.45.45-.45 1.05 0 .6.45 1.05l2.65 2.65h-7.65q-.6 0-1.025.45-.425.45-.425 1.05 0 .65.425 1.075.425.425 1.075.425h7.6l-2.7 2.7q-.4.4-.375 1.025.025.625.425 1.025.45.45 1.05.45.6 0 1.05-.45ZM24 44q-4.25 0-7.9-1.525-3.65-1.525-6.35-4.225-2.7-2.7-4.225-6.35Q4 28.25 4 24q0-4.2 1.525-7.85Q7.05 12.5 9.75 9.8q2.7-2.7 6.35-4.25Q19.75 4 24 4q4.2 0 7.85 1.55Q35.5 7.1 38.2 9.8q2.7 2.7 4.25 6.35Q44 19.8 44 24q0 4.25-1.55 7.9-1.55 3.65-4.25 6.35-2.7 2.7-6.35 4.225Q28.2 44 24 44Z"/></svg></button>
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item hidden">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title hidden">
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.2em" width="1.2em"><path fill="#ce9efd" d="M11.3 40q-1.4 0-2.35-.95Q8 38.1 8 36.7q0-1.4.95-2.35.95-.95 2.35-.95 1.4 0 2.35.95.95.95.95 2.35 0 1.4-.95 2.35-.95.95-2.35.95Zm0-12.7q-1.4 0-2.35-.95Q8 25.4 8 24q0-1.4.95-2.35.95-.95 2.35-.95 1.4 0 2.35.95.95.95.95 2.35 0 1.4-.95 2.35-.95.95-2.35.95Zm0-12.7q-1.4 0-2.35-.95Q8 12.7 8 11.3q0-1.4.95-2.35Q9.9 8 11.3 8q1.4 0 2.35.95.95.95.95 2.35 0 1.4-.95 2.35-.95.95-2.35.95ZM24 27.3q-1.4 0-2.35-.95-.95-.95-.95-2.35 0-1.4.95-2.35.95-.95 2.35-.95 1.4 0 2.35.95.95.95.95 2.35Zm0-12.7q-1.4 0-2.35-.95-.95-.95-.95-2.35 0-1.4.95-2.35Q22.6 8 24 8q1.4 0 2.35.95.95.95.95 2.35 0 1.4-.95 2.35-.95.95-2.35.95ZM22.75 40q-.3 0-.525-.225Q22 39.55 22 39.25v-2.2q0-.1.2-.5L34.15 24.6l3.25 3.25L25.45 39.8q-.1.1-.5.2ZM36.7 14.6q-1.4 0-2.35-.95-.95-.95-.95-2.35 0-1.4.95-2.35Q35.3 8 36.7 8q1.4 0 2.35.95.95.95.95 2.35 0 1.4-.95 2.35-.95.95-2.35.95Zm2 11.95-3.25-3.25 1.25-1.25q.4-.4 1-.425.6-.025 1 .375l1.3 1.3q.4.4.375 1-.025.6-.425 1Z"/></svg>  PhD registrations as Supervisor / Co-Supervisor since January 2024
+        </div>
+
+        <div class="ag-courses-item_date-box hidden">
+          
+<button class="btn bg-primary-subtle float-end go-arrow shadow-s"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="m25.05 30.25 5.2-5.2q.45-.45.45-1.05 0-.6-.45-1.05L25 17.7q-.4-.4-1.025-.375-.625.025-1.025.425-.45.45-.45 1.05 0 .6.45 1.05l2.65 2.65h-7.65q-.6 0-1.025.45-.425.45-.425 1.05 0 .65.425 1.075.425.425 1.075.425h7.6l-2.7 2.7q-.4.4-.375 1.025.025.625.425 1.025.45.45 1.05.45.6 0 1.05-.45ZM24 44q-4.25 0-7.9-1.525-3.65-1.525-6.35-4.225-2.7-2.7-4.225-6.35Q4 28.25 4 24q0-4.2 1.525-7.85Q7.05 12.5 9.75 9.8q2.7-2.7 6.35-4.25Q19.75 4 24 4q4.2 0 7.85 1.55Q35.5 7.1 38.2 9.8q2.7 2.7 4.25 6.35Q44 19.8 44 24q0 4.25-1.55 7.9-1.55 3.65-4.25 6.35-2.7 2.7-6.35 4.225Q28.2 44 24 44Z"/></svg></button>
+        </div>
+      </a>
+    </div>
+
+    <div class="ag-courses_item hidden">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title hidden">
+         <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="#fa8357" d="M15.45 16.95q.6 0 1.05-.45.45-.45.45-1.05 0-.6-.45-1.05-.45-.45-1.05-.45-.6 0-1.05.45-.45.45-.45 1.05 0 .6.45 1.05.45.45 1.05.45Zm0 8.55q.6 0 1.05-.45.45-.45.45-1.05 0-.6-.45-1.05-.45-.45-1.05-.45-.6 0-1.05.45-.45.45-.45 1.05 0 .6.45 1.05.45.45 1.05.45Zm0 8.55q.6 0 1.05-.45.45-.45.45-1.05 0-.6-.45-1.05-.45-.45-1.05-.45-.6 0-1.05.45-.45.45-.45 1.05 0 .6.45 1.05.45.45 1.05.45ZM9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h23.1l9.9 9.9V39q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h30V17.55h-7.05q-.65 0-1.075-.425-.425-.425-.425-1.075V9H9v30Zm0-21.45V39 9v8.55V9v8.55Z"/></svg> Summary
+        </div>
+
+        <div class="ag-courses-item_date-box hidden">
+          
+<button class="btn bg-danger-subtle float-end go-arrow shadow-s"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="m25.05 30.25 5.2-5.2q.45-.45.45-1.05 0-.6-.45-1.05L25 17.7q-.4-.4-1.025-.375-.625.025-1.025.425-.45.45-.45 1.05 0 .6.45 1.05l2.65 2.65h-7.65q-.6 0-1.025.45-.425.45-.425 1.05 0 .65.425 1.075.425.425 1.075.425h7.6l-2.7 2.7q-.4.4-.375 1.025.025.625.425 1.025.45.45 1.05.45.6 0 1.05-.45ZM24 44q-4.25 0-7.9-1.525-3.65-1.525-6.35-4.225-2.7-2.7-4.225-6.35Q4 28.25 4 24q0-4.2 1.525-7.85Q7.05 12.5 9.75 9.8q2.7-2.7 6.35-4.25Q19.75 4 24 4q4.2 0 7.85 1.55Q35.5 7.1 38.2 9.8q2.7 2.7 4.25 6.35Q44 19.8 44 24q0 4.25-1.55 7.9-1.55 3.65-4.25 6.35-2.7 2.7-6.35 4.225Q28.2 44 24 44Z"/></svg></button>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="ag-courses_item hidden">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title hidden">
+ Co-ordinator - FDPS/ Training Programs / Refresher Course / Induction Programs organised by the Department
+        </div>
+
+        <div class="ag-courses-item_date-box hidden">
+          
+<button class="btn bg-danger-subtle float-end go-arrow shadow-s"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="m25.05 30.25 5.2-5.2q.45-.45.45-1.05 0-.6-.45-1.05L25 17.7q-.4-.4-1.025-.375-.625.025-1.025.425-.45.45-.45 1.05 0 .6.45 1.05l2.65 2.65h-7.65q-.6 0-1.025.45-.425.45-.425 1.05 0 .65.425 1.075.425.425 1.075.425h7.6l-2.7 2.7q-.4.4-.375 1.025.025.625.425 1.025.45.45 1.05.45.6 0 1.05-.45ZM24 44q-4.25 0-7.9-1.525-3.65-1.525-6.35-4.225-2.7-2.7-4.225-6.35Q4 28.25 4 24q0-4.2 1.525-7.85Q7.05 12.5 9.75 9.8q2.7-2.7 6.35-4.25Q19.75 4 24 4q4.2 0 7.85 1.55Q35.5 7.1 38.2 9.8q2.7 2.7 4.25 6.35Q44 19.8 44 24q0 4.25-1.55 7.9-1.55 3.65-4.25 6.35-2.7 2.7-6.35 4.225Q28.2 44 24 44Z"/></svg></button>
+        </div>
+      </a>
+    </div>
+
+
+    
+    <div class="ag-courses_item hidden">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title hidden">
+         🏅 Awards Received 
+        </div>
+
+        <div class="ag-courses-item_date-box hidden">
+          
+<button class="btn bg-warning-subtle float-end go-arrow shadow-s"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="m25.05 30.25 5.2-5.2q.45-.45.45-1.05 0-.6-.45-1.05L25 17.7q-.4-.4-1.025-.375-.625.025-1.025.425-.45.45-.45 1.05 0 .6.45 1.05l2.65 2.65h-7.65q-.6 0-1.025.45-.425.45-.425 1.05 0 .65.425 1.075.425.425 1.075.425h7.6l-2.7 2.7q-.4.4-.375 1.025.025.625.425 1.025.45.45 1.05.45.6 0 1.05-.45ZM24 44q-4.25 0-7.9-1.525-3.65-1.525-6.35-4.225-2.7-2.7-4.225-6.35Q4 28.25 4 24q0-4.2 1.525-7.85Q7.05 12.5 9.75 9.8q2.7-2.7 6.35-4.25Q19.75 4 24 4q4.2 0 7.85 1.55Q35.5 7.1 38.2 9.8q2.7 2.7 4.25 6.35Q44 19.8 44 24q0 4.25-1.55 7.9-1.55 3.65-4.25 6.35-2.7 2.7-6.35 4.225Q28.2 44 24 44Z"/></svg></button>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="ag-courses_item hidden">
+      <a href="#" class="ag-courses-item_link">
+        <div class="ag-courses-item_bg"></div>
+
+        <div class="ag-courses-item_title hidden">
+        <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="M41.25 32.75q-1.15 0-1.95-.8T38.5 30v-5q0-1.15.8-1.95t1.95-.8q1.15 0 1.95.8T44 25v5q0 1.15-.8 1.95t-1.95.8Zm0 7.25q-.3 0-.525-.225-.225-.225-.225-.525V36.7q-2.35-.35-3.975-1.875T34.55 31.05q-.05-.35.2-.575.25-.225.6-.225.25 0 .475.175.225.175.275.475.35 1.85 1.8 3.1 1.45 1.25 3.35 1.25 1.9 0 3.35-1.25 1.45-1.25 1.8-3.1.05-.3.3-.475t.5-.175q.35 0 .575.225.225.225.175.575-.35 2.25-1.975 3.775T42 36.7v2.55q0 .3-.225.525-.225.225-.525.225Zm-21.3-17q-3.35 0-5.425-2.075Q12.45 18.85 12.45 15.5q0-3.35 2.075-5.425Q16.6 8 19.95 8q.35 0 .95.075t1.1.175q-1.3 1.55-1.925 3.325-.625 1.775-.625 3.925t.625 3.925Q20.7 21.2 22 22.75q-.55.15-1.125.2-.575.05-.925.05ZM2 40v-4.7q0-1.85.875-3.15.875-1.3 2.575-2.25 1.95-1.1 4.9-1.875Q13.3 27.25 17 26.85q-3.25 1.55-4.525 3.75-1.275 2.2-1.275 4.7V40Zm27.95-17q-3.15 0-5.325-2.175Q22.45 18.65 22.45 15.5q0-3.15 2.175-5.325Q26.8 8 29.95 8q3.15 0 5.325 2.175Q37.45 12.35 37.45 15.5q0 3.15-2.175 5.325Q33.1 23 29.95 23Zm0-3q1.9 0 3.2-1.325 1.3-1.325 1.3-3.175 0-1.9-1.3-3.2-1.3-1.3-3.2-1.3-1.85 0-3.175 1.3-1.325 1.3-1.325 3.2 0 1.85 1.325 3.175Q28.1 20 29.95 20ZM14.2 40v-4.7q0-1.75.925-3.175Q16.05 30.7 17.65 30q2.35-1.05 5.425-2.025Q26.15 27 29.95 27q.25 0 .675.025.425.025.725.025-.3.75-.5 1.475-.2.725-.3 1.475h-.6q-3.6 0-6.2.825t-4.9 1.875q-.8.4-1.225 1.075-.425.675-.425 1.525V37h15.2q.55.8 1.3 1.575.75.775 1.75 1.425Zm15.75-24.5Zm0 14.5Z"/></svg>  Guest Lecturers Delivered
+        </div>
+
+        <div class="ag-courses-item_date-box hidden">
+          
+<button class="btn bg-primary-subtle float-end go-arrow shadow-s"><svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" height="1.5em" width="1.5em"><path fill="currentColor" d="m25.05 30.25 5.2-5.2q.45-.45.45-1.05 0-.6-.45-1.05L25 17.7q-.4-.4-1.025-.375-.625.025-1.025.425-.45.45-.45 1.05 0 .6.45 1.05l2.65 2.65h-7.65q-.6 0-1.025.45-.425.45-.425 1.05 0 .65.425 1.075.425.425 1.075.425h7.6l-2.7 2.7q-.4.4-.375 1.025.025.625.425 1.025.45.45 1.05.45.6 0 1.05-.45ZM24 44q-4.25 0-7.9-1.525-3.65-1.525-6.35-4.225-2.7-2.7-4.225-6.35Q4 28.25 4 24q0-4.2 1.525-7.85Q7.05 12.5 9.75 9.8q2.7-2.7 6.35-4.25Q19.75 4 24 4q4.2 0 7.85 1.55Q35.5 7.1 38.2 9.8q2.7 2.7 4.25 6.35Q44 19.8 44 24q0 4.25-1.55 7.9-1.55 3.65-4.25 6.35-2.7 2.7-6.35 4.225Q28.2 44 24 44Z"/></svg></button>
+        </div>
+      </a>
+    </div>
+
+
+
+  </div>
+</div>
+
+<audio src="amazon_prime_video.mp3" class="d-n " id="my_audio" controls  ></audio>
+<script type="text/javascript" charset="utf-8">
+
+document.getElementById("my_audio").play();
+
+
+   const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        
+          if (entry.isIntersecting){
+              entry.target.classList.add('show');
+          }
+        //   else{
+           //  entry.target.classList.remove//('show')
+        //          } 
+
+      });
+  });
+
+  const hiddenElements = document.querySelectorAll('.hidden');
+  hiddenElements.forEach((el) => observer.observe(el));
+</script>
+</body>
+</html>
