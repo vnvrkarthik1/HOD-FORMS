@@ -261,35 +261,7 @@ a:hover{
             left: 0;
           }
         }
-        #loadimg{
-          position: absolute;
-          left: 0;
-          top:0;
-          height:100vh;
-          width: 100vw;
-          z-index: 100;
-          background: url(Gif.gif);
-          filter: brightness(80%);
-          background-size:100% 100%;
-          opacity: 1;
-          
-          transition: 1s;
-        }
-        #loadimg::after{
-          content:"LOADING.....";
-          position: absolute;
-          top: 80%;
-          left:50%;
-          transform:translate(-50%, -50%);
-          color: white;
-          background: #000000b4;
-          border-radius:10px;
-          padding: 5px 20px;
-          font-weight: bolder;
-          font-size: 2.5rem;
-          
-          z-index: 300;
-        }
+        
        #srgec{
          letter-spacing: .7rem;
          
@@ -301,13 +273,10 @@ a:hover{
 
 <script type="text/javascript" charset="utf-8">
   $(document).ready(function (){
-    setTimeout(()=>{
-      
-      $("#loadimg").fadeOut(1000)
-    },2000)
+    
     
     setTimeout(()=>{
-    //  $("#loadimg").css("height","0")
+
       
       
      
@@ -325,9 +294,7 @@ a:hover{
   <h1 class="mt-0 text-center display-1 fw-bolder fixed-top shadow-sm" id="srgec">SRGEC ECE</h1>
   
   
-    <div id="loadimg">
-<!--     <img src="man-wearing-vr-glasses-gaming.jpg" class="img-fluid " style="height:100dvh" id="loadimg" alt="" /> -->
-  </div>
+    
   
 
 
